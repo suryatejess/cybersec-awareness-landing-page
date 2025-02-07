@@ -1,32 +1,40 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 const AwarenessConcernLeft = ({ text, subText, image }) => {
   return (
-    <div className="flex justify-around items-center">
+    <div className="flex flex-col md:flex-row justify-around items-center gap-8 p-4 md:p-8">
       <div
         id="displayText"
-        className=" w-1/2 flex flex-col justify-center p-16"
+        className="w-full md:w-1/2 flex flex-col justify-center space-y-4"
       >
         <p
-          className="text-white text-2xl"
+          className="text-white text-lg md:text-2xl text-center md:text-left"
           style={{ fontFamily: "'Press Start 2P', cursive" }}
         >
           {text}
         </p>
-
         <p
-          className="text-white text-2xl"
+          className="text-white text-lg md:text-2xl text-center md:text-left"
           style={{ fontFamily: "'Orbitron', sans-serif" }}
         >
           {subText}
         </p>
       </div>
-
-      <div id="displayImage" className=" w-1/2flex justify-center">
-        <img className="object-cover w-96 h-96" src={image} alt="Awareness" />
+      <div id="displayImage" className="w-full md:w-1/2 flex justify-center">
+        <img
+          className="object-cover w-64 h-64 md:w-96 md:h-96"
+          src={image}
+          alt="Awareness"
+        />
       </div>
     </div>
   );
+};
+
+AwarenessConcernLeft.propTypes = {
+  text: PropTypes.string.isRequired,
+  subText: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
 };
 
 export default AwarenessConcernLeft;

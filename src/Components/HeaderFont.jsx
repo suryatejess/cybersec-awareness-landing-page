@@ -16,7 +16,10 @@ const StyledWrapper = styled.div`
   .glitch-container {
     position: relative;
     font-family: "Orbitron", sans-serif;
-    font-size: 72px;
+    font-size: 36px; /* Mobile size */
+    @media (min-width: 768px) {
+      font-size: 72px; /* Desktop size */
+    }
     font-weight: 900;
     text-transform: uppercase;
     color: #00ffff;

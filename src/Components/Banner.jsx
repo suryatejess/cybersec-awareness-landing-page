@@ -2,11 +2,11 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="banner">
+    <div className="banner relative w-full">
       <img
-        src="/src/assets/banner.jpg"
+        src="/assets/banner.jpg"
         alt="Banner image covering full viewport height"
-        className="h-screen object-cover object-right-top"
+        className="h-[50vh] md:h-screen w-full object-cover object-right-top"
       />
     </div>
   );

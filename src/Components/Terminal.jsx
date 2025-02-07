@@ -46,14 +46,18 @@ const StyledWrapper = styled.div`
     background-color: #1a1a1a;
     color: #0f0;
     font-family: "Courier New", Courier, monospace;
-    font-size: 1em;
+    font-size: 0.8em;
     padding: 1.5em 1em;
-    width: 20em;
+    width: 90vw;
+    max-width: 20em;
     box-shadow: 0 0 20px rgba(0, 255, 0, 0.5), 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
+    @media (min-width: 768px) {
+      font-size: 1em;
+    }
   }
 
   .terminal-header {
