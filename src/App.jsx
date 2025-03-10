@@ -25,7 +25,7 @@ function App() {
         id="headerFont"
         className="flex justify-center items-center p-4 md:p-8"
       >
-        <HeaderFont />
+        <HeaderFont text="We are Dedsec" />
       </div>
 
       <div id="awarenessConcern" className="space-y-12 md:space-y-24">

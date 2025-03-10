@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
-const HeaderFont = () => {
+const HeaderFont = ({ text }) => {
   return (
     <StyledWrapper>
       <div className="glitch-container">
-        We are Dedsec
-        <span>We are Dedsec</span>
-        <span>We are Dedsec</span>
+        {/* We are Dedsec */}
+        {text}
+        <span>{text}</span>
+        <span>{text}</span>
       </div>
     </StyledWrapper>
   );
