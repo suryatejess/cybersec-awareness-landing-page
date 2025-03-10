@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const HeaderFont = ({ text }) => {
+const HeaderFont = ({ text, fontsize }) => {
   return (
     <StyledWrapper>
       <div className="glitch-container">
@@ -17,9 +17,9 @@ const StyledWrapper = styled.div`
   .glitch-container {
     position: relative;
     font-family: "Orbitron", sans-serif;
-    font-size: 36px; /* Mobile size */
+    font-size: 18px; /* Mobile size */
     @media (min-width: 768px) {
-      font-size: 72px; /* Desktop size */
+      font-size: 36px; /* Desktop size */
     }
     font-weight: 900;
     text-transform: uppercase;

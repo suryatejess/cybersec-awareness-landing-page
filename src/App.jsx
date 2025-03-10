@@ -13,6 +13,7 @@ import Button from "./Components/Button";
 import Socials from "./Components/Socials";
 import NewsLetter from "./Components/NewsLetter";
 import JoinUs from "./Components/JoinUs";
+import Details from "./Components/Details";
 
 function App() {
   return (
@@ -25,8 +26,16 @@ function App() {
         id="headerFont"
         className="flex justify-center items-center p-4 md:p-8"
       >
-        <HeaderFont text="We are Dedsec" />
+        <HeaderFont text="A novel deep learning model to identify cyber bullying and it's impact on mental health of the youth in India" />
       </div>
+
+      <Details
+        grantNumber="DST/CSRI/2021/70"
+        piName="Madhulika Sahoo"
+        coPiName="Sibi Chakkaravarthy Sethuraman"
+        jrf="Dr. S. Anitha"
+        researchAssosciate="Anuradha"
+      />
 
       <div id="awarenessConcern" className="space-y-12 md:space-y-24">
         <AwarenessConcern
